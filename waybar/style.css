@@ -1,0 +1,49 @@
+@import '../../.cache/wal/colors-waybar.css';
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: "CaskaydiaCove Nerd Font";
+  font-size: 16px;
+  padding: 0;
+}
+
+window#waybar {
+  background: @background;
+  color: @color14;
+}
+
+tooltip {
+  background-color: #202020;
+}
+
+#clock,
+#tray,
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio {
+  margin: 2px 2px 0px 0px;
+  padding: 2px 8px;
+}
+
+#workspaces button {
+  color: @color15;
+}
+
+
+#workspaces button.focused {
+  background-color: #9b5d7f;
+  color: @color9;
+}
+
+#workspaces button.active {
+  background-color: @color15;
+  color: @color12;
+}
+
+#battery, #tray, #clock, #cpu, #pulseaudio, #memory {
+  /* background-color: none; */
+  color: #9b8d7f;
+}
