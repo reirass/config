@@ -1,15 +1,16 @@
 @import '../../.cache/wal/colors-waybar.css';
+
 * {
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: "CaskaydiaCove Nerd Font";
+  font-family: "Iosevka Term";
   font-size: 16px;
   padding: 0;
 }
 
 window#waybar {
-  background: @background;
+  background-color: rgba(0, 0, 0, 0.0);
   color: @color14;
 }
 
@@ -28,6 +29,7 @@ tooltip {
   padding: 2px 8px;
 }
 
+
 #workspaces button {
   color: @color15;
 }
@@ -43,7 +45,12 @@ tooltip {
   color: @color12;
 }
 
-#battery, #tray, #clock, #cpu, #pulseaudio, #memory {
+#battery,
+#tray,
+#clock,
+#cpu,
+#pulseaudio,
+#memory {
   /* background-color: none; */
-  color: #9b8d7f;
+  color: @color16;
 }
