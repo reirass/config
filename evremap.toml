@@ -1,0 +1,25 @@
+# this goes inside /etc
+# $ evremap remap evremap.toml
+# $ sudo systemctl daemon-reload
+# $ sudo systemctl enable evremap.service
+# $ sudo systemctl start evremap.service
+
+
+device_name = "HUSKY Gaming Teclado Gamer Husky Blizzard" # see evremap list-devices to make sure
+phys = "usb-0000:0b:00.3-1/input0" 
+
+[[remap]]
+input = ["KEY_RIGHTSHIFT", "KEY_LEFTBRACE"]
+output = ["KEY_UP"]
+
+[[remap]]
+input = ["KEY_RIGHTSHIFT", "KEY_APOSTROPHE"]
+output = ["KEY_DOWN"]
+
+[[remap]]
+input = ["KEY_RIGHTSHIFT", "KEY_BACKSLASH"]
+output = ["KEY_RIGHT"]
+
+[[remap]]
+input = ["KEY_RIGHTSHIFT", "KEY_SEMICOLON"]
+output = ["KEY_LEFT"]
